@@ -1,4 +1,31 @@
 article {
-    max-width: 65ch;
-    margin-inline: auto;
+  display: grid;
+  grid-template-columns:
+    [full-start] 1fr
+    [content-start] minmax(0, 65ch) [content-end]
+    1fr [full-end];
+  gap: 1rem;
+}
+
+/* Al almindelig tekst i midterkolonnen */
+article > * {
+  grid-column: content-start / content-end;
+}
+
+blockquote {
+  grid-column: content-start / content-end; /* start i content-kolonnen */
+  width: 120%; /* lidt bredere end content */
+  margin-left: -10%; /* flyt lidt ud til venstre */
+  margin-right: -10%; /* centrer så den fylder lidt ekstra */
+  background: #f9f9f9;
+  padding: 1rem;
+  border-left: 4px solid #999;
+  font-style: italic;
+}
+
+
+/* Breakout billede */
+img {
+  grid-column: full-start / full-end; /* fylder hele viewport */
+  width: 100%;
 }
