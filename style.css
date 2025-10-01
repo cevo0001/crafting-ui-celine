@@ -37,7 +37,7 @@
         color: #334155;
     }
 
-    /* 🩷 :has() regler for opgaven 🩷 */
+    /* :has() regler for opgaven */
 
     /* Kort uden både img og h3 */
     .card:not(:has(img)):not(:has(h3)) p {
@@ -56,7 +56,7 @@
     }
 
     .card:has(img) .content {
-        padding: 1rem; /* matcher de andre kort */
+        padding: 1rem; /* matcher de andre kort*/
     }
 }
 
