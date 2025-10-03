@@ -21,9 +21,17 @@ section {
         >*+* {
             margin-top: .75rlh;
         }
+
+        
     }
 
-    figure {}
+    figure {
+    
+    grid-template-rows: subgrid;
+    grid-template-columns: subgrid;
+
+
+    }
 
     img {
         align-self: stretch;
@@ -38,4 +46,5 @@ section {
         background: var(--gray-100);
         padding: .4rlh .6rlh;
     }
+    
 }
