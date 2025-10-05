@@ -10,12 +10,12 @@ article {
         0 20px 25px -5px rgba(0, 0, 0, 0.1),
         0 10px 10px -5px rgba(0, 0, 0, 0.04);
     border-radius: 1rem;
-    border: 1px solid #DADCEB;
+    border: 3px solid #b3b8d0;
 }
 
 .picture {
     display: grid;
-    padding: .5rem;
+    padding: .9rem;
 
     >* {
         grid-area: 1 / 1;
@@ -34,14 +34,19 @@ article {
         letter-spacing: 2px;
         line-height: 1;
         place-self: end;
-        background: #BDC4CE;
+        background: #5d6876;
         color: #fff;
         margin: 1rem;
+        z-index: 2;
     }
 
     img {
-        border: 1px solid #DADCEB;
-        border-radius: .5rem;
+        border: 3px solid #b3b8d0;
+        border-radius: .8rem;
+        width: 360px;
+        margin: auto;
+        margin-top: 8px;
+         filter: brightness(0.9);
     }
 }
 
@@ -54,18 +59,23 @@ article {
 .title {
     font-family: 'Abril Fatface', sans-serif;
     font-weight: 400;
-    font-size: 2rem;
-    color: #3C55CC;
+    font-size: 2.4rem;
+    color: #313e80;
+    line-height: 1;
+    margin-bottom: 0.5rem;
 }
 
 .location {
-    color: #C8C9CB;
+    color: #616b7f;
     text-transform: uppercase;
     font-size: .95em;
 }
 
 .description p {
-    text-align: center;
+    text-align: left;
+    line-height: 1.5;
+    padding: 6px 0 ;
+    font-size: 1rem;
 }
 
 .amenities-details {
@@ -75,18 +85,20 @@ article {
     li {
         flex: 1;
         display: grid;
-        gap: .75rem;
+        gap: .7rem;
         place-items: center;
-        padding: .25rem;
-        background: #F0F2FF;
-        color: #3C55CC;
+        padding: .2rem;
+        background: #ebecf6;
+        color: #313e80;
+        border-radius: 9px;
+        border: 0.1px solid #b3b8d0;
     }
 }
 
 
 footer {
     padding: 1rem 2rem;
-    box-shadow: 0 -2px 4px -1px #0002;
+    box-shadow: 0 -2px 4px -1px #b3b8d0;
 
     display: flex;
     gap: 1rem;
@@ -99,18 +111,20 @@ footer {
         padding: .75rem 1rem;
         border: none;
         line-height: 1;
-        border-radius: 8px;
-        font-weight: 500;
+        border-radius: 9px;
+        font-weight: 900;
         font: inherit;
-        background: #F0F2FF;
-        color: #3C55CC;
+        background: #e7e9f7;
+        color: #313e80;
+        border: 0.1px solid #b3b8d0;
     }
 
     .price {
-        font-weight: 600;
+        font-weight: 900;
+       
 
         span {
-            color: #908F9F;
+            color: #313e80;
             font-size: 0.75em;
             font-weight: 400;
         }
