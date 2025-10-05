@@ -13,4 +13,82 @@
 
 body {
     font-family: system-ui, sans-serif;
+ 
+    padding: 50px;
+}
+
+article > * + * {
+  margin-block-start: var(--space-s-m);
+}
+
+article > h2 + p {
+  margin-block-start: var(--space-xs);
+}
+
+article > h3 + * {
+  margin-block-start: var(--space-xs-s);
+}
+
+
+
+/* @link https://utopia.fyi/space/calculator?c=360,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0cqi, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5369rem + 0.1136cqi, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8494rem + 0.1136cqi, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.0739rem + 0.2273cqi, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.6108rem + 0.3409cqi, 1.875rem);
+  --space-l: clamp(2.25rem, 2.1477rem + 0.4545cqi, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2216rem + 0.6818cqi, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.2955rem + 0.9091cqi, 5rem);
+  --space-3xl: clamp(6.75rem, 6.4432rem + 1.3636cqi, 7.5rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.3125rem, 0.1847rem + 0.5682cqi, 0.625rem);
+  --space-2xs-xs: clamp(0.5625rem, 0.4091rem + 0.6818cqi, 0.9375rem);
+  --space-xs-s: clamp(0.875rem, 0.7216rem + 0.6818cqi, 1.25rem);
+  --space-s-m: clamp(1.125rem, 0.8182rem + 1.3636cqi, 1.875rem);
+  --space-m-l: clamp(1.6875rem, 1.3551rem + 1.4773cqi, 2.5rem);
+  --space-l-xl: clamp(2.25rem, 1.6364rem + 2.7273cqi, 3.75rem);
+  --space-xl-2xl: clamp(3.375rem, 2.7102rem + 2.9545cqi, 5rem);
+  --space-2xl-3xl: clamp(4.5rem, 3.2727rem + 5.4545cqi, 7.5rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1.125rem, 0.5625rem + 2.5cqi, 2.5rem);
+}
+
+/* @link https://utopia.fyi/type/calculator?c=307,16,1.125,1236,19,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --step--2: clamp(0.76rem, 0.8001rem + -0.0519cqi, 0.7901rem);
+  --step--1: clamp(0.8889rem, 0.8687rem + 0.1053cqi, 0.95rem);
+  --step-0: clamp(1rem, 0.938rem + 0.3229cqi, 1.1875rem);
+  --step-1: clamp(1.125rem, 1.0062rem + 0.6189cqi, 1.4844rem);
+  --step-2: clamp(1.2656rem, 1.0707rem + 1.0159cqi, 1.8555rem);
+  --step-3: clamp(1.4238rem, 1.1279rem + 1.5423cqi, 2.3193rem);
+  --step-4: clamp(1.6018rem, 1.1731rem + 2.2344cqi, 2.8992rem);
+  --step-5: clamp(1.802rem, 1.2rem + 3.1379cqi, 3.624rem);
+}
+
+/* 💬 Brug typografien her */
+h1 {
+  font-size: var(--step-4);
+}
+
+h2 {
+  font-size: var(--step-3);
+}
+
+p {
+  font-size: var(--step-0);
+  margin-right: 150px;
+}
+
+img{
+    width: 620px;
+}
+
+figcaption{
+    margin-right: 510px;
 }
